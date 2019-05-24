@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="#" type="image/png">
+
+    <title>娱乐最前沿1014</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="sticky-header">
+
+    <section>
+        <!-- left side start-->
+        <div class="left-side sticky-left-side">
+
+            <!--logo and iconic logo start-->
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+
+            <div class="logo-icon text-center">
+                <a href="index.html"><img src="images/logo_icon.png" alt=""></a>
+            </div>
+            <!--logo and iconic logo end-->
+
+
+            <div class="left-side-inner">
+                    <!--sidebar nav start-->
+                    <ul class="nav nav-pills nav-stacked custom-nav">
+                        <li><a href="index.html"><i class="fa fa-home"></i> <span>统计分析</span></a></li>
+
+                        <li class="menu-list"><a href=""><i class="fa fa-bar-chart-o"></i> <span>微博分析</span></a>
+                            <ul class="sub-menu-list" style="display: block;">
+                                <li class="active"><a href="user.html" > 博主分析</a></li>
+                                <li><a href="post.html"> 博文分析</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-list"><a href=""><i class="fa fa-cogs"></i> <span>网络分析</span></a>
+                            <ul class="sub-menu-list" >
+                                <li><a href="user_network.html"> 用户网络分析</a></li>
+                                <li><a href="topic_network.html"> 话题网络分析</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--sidebar nav end-->
+            </div>
+        </div>
+        <!-- left side end-->
+
+        <!-- main content start-->
+        <div class="main-content">
+
+            <!-- header section start-->
+            <div class="header-section">
+
+                <!--toggle button start-->
+                <a class="toggle-btn"><i class="fa fa-bars"></i></a>
+                <!--toggle button end-->
+
+                <!--search start-->
+                <form class="searchform" action="index.html" method="post">
+                    <input type="text" class="form-control" name="keyword" placeholder="Search here..." />
+                </form>
+                <!--search end-->
+
+                <!--notification menu start -->
+                <div class="menu-right">
+                    <ul class="notification-menu">
+                        <li>
+                            <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <img src="https://wx4.sinaimg.cn/orj480/007GIP6sly8g1m2aiom8rj30u00u0tbx.jpg" alt="" />
+                                娱乐最前沿1014
+                                <span></span>
+                            </a>
+
+                        </li>
+
+                    </ul>
+                </div>
+                <!--notification menu end -->
+
+            </div>
+            <!-- header section end-->
+
+            <!--body wrapper start-->
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel">
+                            <header class="panel-heading">
+                                <h4><b>微博数目排名TOP10</b></h4>
+                            </header>
+                            <div class="panel-body">
+                                <div class="col-md-12">
+                                    <div id="statuses_count" style="width: 100%;height:300px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel">
+                            <header class="panel-heading">
+                                <h4><b>粉丝数目排名TOP10</b></h4>
+                            </header>
+                            <div class="panel-body">
+                                <div class="col-md-12">
+                                    <div id="followers_count" style="width: 100%;height:300px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel">
+                            <header class="panel-heading">
+                                <h4><b>关注数目排名TOP10</b></h4>
+                            </header>
+                            <div class="panel-body">
+                                <div class="col-md-12">
+                                    <div id="follow_count" style="width: 100%;height:300px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="directory-info-row">
+                    <div class="row">
+                        <!-- 加载前十个人的微博-->
+                        <div class="col-md-6 col-sm-6">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <h4>蔡徐坤<span class="text-muted small"></span></h4>
+                                    <div class="media">
+                                        <a href="#myModal1" class="pull-left" data-toggle="modal">
+                                            <img class="thumb media-object"
+                                                src="https://tvax2.sinaimg.cn/crop.0.0.1125.1125.180/69e273f8ly8fuqt81zh3dj20v90v9abc.jpg"
+                                                alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <address>
+                                                性别:男<br>
+                                                职业:演员、歌手<br>
+                                                生日:1998-8-2<br>
+                                                地址:浙江<br>
+                                                微博量:352<br>
+                                                粉丝量:23846791<br>
+                                                关注量:123<br>
+                                                <abbr title="Phone">UID:</abbr> 1776448504<br>
+                                            </address>
+                                            <ul class="social-links">
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1776448504" data-original-title="Facebook"><i
+                                                            class="fa fa-facebook"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1776448504" data-original-title="Twitter"><i
+                                                            class="fa fa-twitter"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1776448504" data-original-title="LinkedIn"><i
+                                                            class="fa fa-linkedin"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1776448504" data-original-title="weibo"><i
+                                                            class="fa fa-weibo"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <h4>TFBOYS-易烊千玺<span class="text-muted small"></span></h4>
+                                    <div class="media">
+                                        <a href="#myModal2" class="pull-left" data-toggle="modal">
+                                            <img class="thumb media-object"
+                                                src="https://tvax2.sinaimg.cn/crop.0.0.996.996.180/d7f7faddly8fhx8l3fuiuj20ro0rojtn.jpg"
+                                                alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <address>
+                                                性别:男<br>
+                                                职业:歌手、舞者、演员<br>
+                                                生日:2000-11-28<br>
+                                                地址:湖南<br>
+                                                微博量:352<br>
+                                                粉丝量:23846791<br>
+                                                关注量:123<br>
+                                                <abbr title="Phone">UID:</abbr> 3623353053<br>
+                                            </address>
+                                            <ul class="social-links">
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/3623353053" data-original-title="Facebook"><i
+                                                            class="fa fa-facebook"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/3623353053" data-original-title="Twitter"><i
+                                                            class="fa fa-twitter"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/3623353053" data-original-title="LinkedIn"><i
+                                                            class="fa fa-linkedin"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/3623353053" data-original-title="Weibo"><i
+                                                            class="fa fa-weibo"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <h4>TFBOYS-王源<span class="text-muted small"></span></h4>
+                                    <div class="media">
+                                        <a class="pull-left" href="#myModal3" data-toggle="modal">
+                                            <img class="thumb media-object"
+                                                src="https://tvax1.sinaimg.cn/crop.0.0.996.996.180/a7a0d747ly8fhx8k128s8j20ro0rogof.jpg"
+                                                alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <address>
+                                                <strong>性别:男</strong><br>
+                                                职业:学生、歌手、演员、主持人<br>
+                                                生日:2000-11-8<br>
+                                                地址:重庆<br>
+                                                微博量:943<br>
+                                                粉丝量:72785480<br>
+                                                关注量:269<br>
+                                                <abbr title="Phone">UID:</abbr>2812335943
+                                            </address>
+                                            <ul class="social-links">
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/2812335943" data-original-title="Facebook"><i
+                                                            class="fa fa-facebook"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/2812335943" data-original-title="Twitter"><i
+                                                            class="fa fa-twitter"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/2812335943" data-original-title="LinkedIn"><i
+                                                            class="fa fa-linkedin"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/2812335943" data-original-title="weibo"><i
+                                                            class="fa fa-weibo"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <h4>华晨宇yu<span class="text-muted small"></span></h4>
+                                    <div class="media">
+                                        <a href="#myModal4" class="pull-left" data-toggle="modal">
+                                            <img class="thumb media-object"
+                                                src="https://tva4.sinaimg.cn/crop.0.0.1080.1080.180/60da5d47jw8esd1q1zlzmj20u00u076v.jpg"
+                                                alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <address>
+                                                <strong>性别:男</strong><br>
+                                                职业:歌手<br>
+                                                生日:1990-2-7<br>
+                                                地址:湖北<br>
+                                                微博量:1033<br>
+                                                粉丝量:31771827<br>
+                                                关注量:126<br>
+                                                <abbr title="Phone">UID:</abbr> 1624923463
+                                            </address>
+                                            <ul class="social-links">
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1624923463" data-original-title="Facebook"><i
+                                                            class="fa fa-facebook"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1624923463" data-original-title="Twitter"><i
+                                                            class="fa fa-twitter"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1624923463" data-original-title="LinkedIn"><i
+                                                            class="fa fa-linkedin"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1624923463" data-original-title="weibo"><i
+                                                            class="fa fa-weibo"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <h4>TFBOYS-王俊凯<span class="text-muted small"></span></h4>
+                                    <div class="media">
+                                        <a href="#myModal5" class="pull-left" data-toggle="modal">
+                                            <img class="thumb media-object"
+                                                src="https://tvax2.sinaimg.cn/crop.0.0.996.996.180/9b884b3bly8fhx93bz3rej20ro0rojtg.jpg"
+                                                alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <address>
+                                                <strong>性别:男</strong><br>
+                                                职业:学生，歌手，演员<br>
+                                                生日:1999-9-21<br>
+                                                地址:重庆<br>
+                                                微博量:1116<br>
+                                                粉丝量:71977844<br>
+                                                关注量:238<br>
+                                                <abbr title="Phone">UID:</abbr> 2609400635
+                                            </address>
+                                            <ul class="social-links">
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/2609400635" data-original-title="Facebook"><i
+                                                            class="fa fa-facebook"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/2609400635" data-original-title="Twitter"><i
+                                                            class="fa fa-twitter"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/2609400635" data-original-title="LinkedIn"><i
+                                                            class="fa fa-linkedin"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/2609400635" data-original-title="weibo"><i
+                                                            class="fa fa-weibo"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <h4>杨洋<span class="text-muted small"></span></h4>
+                                    <div class="media">
+                                        <a href="#myModal6" class="pull-left" data-toggle="modal">
+                                            <img class="thumb media-object"
+                                                src="https://tvax2.sinaimg.cn/crop.0.0.1080.1080.180/6c351711ly8g2ioufp70gj20u00u0gpa.jpg"
+                                                alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <address>
+                                                <strong>性别:男</strong><br>
+                                                职业:演员<br>
+                                                生日:1991-9-9<br>
+                                                地址:上海<br>
+                                                微博量:946<br>
+                                                粉丝量:47476718<br>
+                                                关注量:308<br>
+                                                <abbr title="Phone">UID:</abbr>1815418641
+                                            </address>
+                                            <ul class="social-links">
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1815418641" data-original-title="Facebook"><i
+                                                            class="fa fa-facebook"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1815418641" data-original-title="Twitter"><i
+                                                            class="fa fa-twitter"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1815418641" data-original-title="LinkedIn"><i
+                                                            class="fa fa-linkedin"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1815418641" data-original-title="weibo"><i
+                                                            class="fa fa-weibo"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <h4>吴磊LEO<span class="text-muted small"></span></h4>
+                                    <div class="media">
+                                        <a href="#myModal7" class="pull-left" data-toggle="modal">
+                                            <img class="thumb media-object"
+                                                src="https://tva3.sinaimg.cn/crop.1.0.1240.1240.180/7fad39afjw8f7hemst7m4j20yi0ygq5x.jpg"
+                                                alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <address>
+                                                <strong>性别:男</strong><br>
+                                                职业:演员<br>
+                                                生日:1999-12-26<br>
+                                                地址:上海<br>
+                                                微博量:1028<br>
+                                                粉丝量:38650850<br>
+                                                关注量:228<br>
+                                                <abbr title="Phone">UID:</abbr> 2142058927
+                                            </address>
+                                            <ul class="social-links">
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/2142058927" data-original-title="Facebook"><i
+                                                            class="fa fa-facebook"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/2142058927" data-original-title="Twitter"><i
+                                                            class="fa fa-twitter"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/2142058927" data-original-title="LinkedIn"><i
+                                                            class="fa fa-linkedin"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/2142058927" data-original-title="weibo"><i
+                                                            class="fa fa-weibo"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <h4>胡歌<span class="text-muted small"></span></h4>
+                                    <div class="media">
+                                        <a href="#myModal8" class="pull-left" data-toggle="modal">
+                                            <img class="thumb media-object"
+                                                src="https://tvax3.sinaimg.cn/crop.0.0.1125.1125.180/48e837eely8fukyqrf4ijj20v90v9mzy.jpg"
+                                                alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <address>
+                                                <strong>性别:男</strong><br>
+                                                职业:演员、歌手<br>
+                                                生日:1982-9-20<br>
+                                                地址:上海<br>
+                                                微博量:3714<br>
+                                                粉丝量:66628261<br>
+                                                关注量:678<br>
+                                                <abbr title="Phone">UID:</abbr>1223178222
+                                            </address>
+                                            <ul class="social-links">
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1223178222" data-original-title="Facebook"><i
+                                                            class="fa fa-facebook"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1223178222" data-original-title="Twitter"><i
+                                                            class="fa fa-twitter"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1223178222" data-original-title="LinkedIn"><i
+                                                            class="fa fa-linkedin"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1223178222" data-original-title="weibo"><i
+                                                            class="fa fa-weibo"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <h4>刘昊然turbo<span class="text-muted small"></span></h4>
+                                    <div class="media">
+                                        <a href="#myModal9" class="pull-left" data-toggle="modal">
+                                            <img class="thumb media-object"
+                                                src="https://tva2.sinaimg.cn/crop.0.0.1242.1242.180/ab179aaejw8f3xb0otda9j20yi0yj0yl.jpg"
+                                                alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <address>
+                                                <strong>性别:男</strong><br>
+                                                职业:演员、学生<br>
+                                                生日:1997-10-10<br>
+                                                地址:河南<br>
+                                                微博量:889<br>
+                                                粉丝量:27772653<br>
+                                                关注量:383<br>
+                                                <abbr title="Phone">UID:</abbr>2870450862
+                                            </address>
+                                            <ul class="social-links">
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/2870450862" data-original-title="Facebook"><i
+                                                            class="fa fa-facebook"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/2870450862" data-original-title="Twitter"><i
+                                                            class="fa fa-twitter"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/2870450862" data-original-title="LinkedIn"><i
+                                                            class="fa fa-linkedin"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/2870450862" data-original-title="weibo"><i
+                                                            class="fa fa-weibo"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <h4>杨幂<span class="text-muted small"></span></h4>
+                                    <div class="media">
+                                        <a href="#myModal10" class="pull-left" data-toggle="modal">
+                                            <img class="thumb media-object"
+                                                src="https://tva4.sinaimg.cn/crop.0.0.512.512.180/473df571jw8eku7gao4irj20e80e8dg7.jpg"
+                                                alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <address>
+                                                <strong>性别:女</strong><br>
+                                                职业:演员、歌手、制片人<br>
+                                                生日:1986-9-12<br>
+                                                地址:北京<br>
+                                                微博量:3880<br>
+                                                粉丝量:103884540<br>
+                                                关注量:607<br>
+                                                <abbr title="Phone">UID:</abbr> 1195242865
+                                            </address>
+                                            <ul class="social-links">
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1195242865" data-original-title="Facebook"><i
+                                                            class="fa fa-facebook"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1195242865" data-original-title="Twitter"><i
+                                                            class="fa fa-twitter"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1195242865" data-original-title="LinkedIn"><i
+                                                            class="fa fa-linkedin"></i></a></li>
+                                                <li><a title="" data-placement="top" data-toggle="tooltip"
+                                                        class="tooltips" href="https://m.weibo.cn/u/1195242865" data-original-title="weibo"><i
+                                                            class="fa fa-weibo"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">蔡徐坤</h4>
+                                    </div>
+                                    <div class="modal-body row">
+                                        <div class="col-md-12 img-modal">
+                                            <!--12表示中间-->
+                                            <img src="images/gallery/img/1776448504_蔡徐坤.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"
+                                        aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">TFBOYS-易烊千玺</h4>
+                                </div>
+                                <div class="modal-body row">
+                                    <div class="col-md-12 img-modal">
+                                        <!--12表示中间-->
+                                        <img src="images/gallery/img/3623353053_TFBOYS-易烊千玺.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                    aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">TFBOYS-王源</h4>
+                            </div>
+                            <div class="modal-body row">
+                                <div class="col-md-12 img-modal">
+                                    <!--12表示中间-->
+                                    <img src="images/gallery/img/2812335943_TFBOYS-王源.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">华晨宇yu</h4>
+                        </div>
+                        <div class="modal-body row">
+                            <div class="col-md-12 img-modal">
+                                <!--12表示中间-->
+                                <img src="images/gallery/img/1624923463_华晨宇yu.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">TFBOYS-王俊凯</h4>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-12 img-modal">
+                            <!--12表示中间-->
+                            <img src="images/gallery/img/2609400635_TFBOYS-王俊凯.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">杨洋</h4>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-12 img-modal">
+                            <!--12表示中间-->
+                            <img src="images/gallery/img/1815418641_杨洋.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">吴磊LEO</h4>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-12 img-modal">
+                            <!--12表示中间-->
+                            <img src="images/gallery/img/2142058927_吴磊LEO.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">胡歌</h4>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-12 img-modal">
+                            <!--12表示中间-->
+                            <img src="images/gallery/img/1223178222_胡歌.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">刘昊然turbo</h4>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-12 img-modal">
+                            <!--12表示中间-->
+                            <img src="images/gallery/img/2870450862_刘昊然turbo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="modal fade" id="myModal10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">杨幂</h4>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-12 img-modal">
+                            <!--12表示中间-->
+                            <img src="images/gallery/img/1195242865_杨幂.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        </div>
+        </div>
+        </div>
+        <!--body wrapper end-->
+
+        <!--footer section start-->
+        <footer style="text-align:center">
+            <strong>2019 &copy; 北京理工大学计算机学院-社交网络分析</strong>
+        </footer>
+        <!--footer section end-->
+
+
+        </div>
+        <!-- main content end-->
+    </section>
+
+    <!-- Placed js at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+
+
+    <!--common scripts for all pages-->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
+<script src="js/echarts.min.js"></script>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('statuses_count'));
+    var option = {
+        tooltip: {
+            trigger: 'axis'
+        },
+        toolbox: {
+            show: true,
+            feature: {
+                dataView: { show: true, readOnly: false },
+                magicType: { show: true, type: ['line', 'bar'] },
+                restore: { show: true },
+                saveAsImage: { show: true }
+            }
+        },
+        calculable: true,
+        xAxis: [
+            {
+                type: 'category',
+                data: ['新手指南', '谢娜', '杨幂', '陈坤', '微博会员', '人民日报', '微博故事', '超话社区',
+                    'TFBOYS-易烊千玺', 'TFBOYS-王源']
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: [
+            {
+                name: '微博数目',
+                type: 'bar',
+                data: [226938, 198589, 186329, 157760, 151764, 138402, 117775, 115890,
+                    114245, 104060],
+                markPoint: {
+                    data: [
+                        { type: 'max', name: '最大值' },
+                        { type: 'min', name: '最小值' }
+                    ]
+                },
+                markLine: {
+                    data: [
+                        { type: 'average', name: '平均值' }
+                    ]
+                }
+            }
+
+        ]
+    };
+    myChart.setOption(option);
+
+
+
+    var myChart = echarts.init(document.getElementById('followers_count'));
+    var option = {
+        tooltip: {
+            trigger: 'axis'
+        },
+        toolbox: {
+            show: true,
+            feature: {
+                dataView: { show: true, readOnly: false },
+                magicType: { show: true, type: ['line', 'bar'] },
+                restore: { show: true },
+                saveAsImage: { show: true }
+            }
+        },
+        calculable: true,
+        xAxis: [
+            {
+                type: 'category',
+                data: ['新浪体育', 'NBA', '每日笑话微博', '头条新闻', '全球热门搜罗', '新浪娱乐', '中国新闻周刊',
+                    '中国新闻网', '广州日报', '新浪科技']
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: [
+            {
+                name: '粉丝数目',
+                type: 'bar',
+                data: [184709270, 123807729, 103884540, 94210025, 94186440, 88488206,
+                    87726131, 86833582, 73174137, 72785480],
+                markPoint: {
+                    data: [
+                        { type: 'max', name: '最大值' },
+                        { type: 'min', name: '最小值' }
+                    ]
+                },
+                markLine: {
+                    data: [
+                        { type: 'average', name: '平均值' }
+                    ]
+                }
+            }
+
+        ]
+    };
+    myChart.setOption(option);
+
+
+
+    var myChart = echarts.init(document.getElementById('follow_count'));
+    var option = {
+        tooltip: {
+            trigger: 'axis'
+        },
+        toolbox: {
+            show: true,
+            feature: {
+                dataView: { show: true, readOnly: false },
+                magicType: { show: true, type: ['line', 'bar'] },
+                restore: { show: true },
+                saveAsImage: { show: true }
+            }
+        },
+        calculable: true,
+        xAxis: [
+            {
+                type: 'category',
+                data: ['新浪游戏', '广州日报', '新浪娱乐', '中国新闻周刊', '微博爱豆', '人民日报', '新手指南', '微博综艺',
+                    '优酷', '梨视频']
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: [
+            {
+                name: '关注数目',
+                type: 'bar',
+                data: [3717, 3438, 3379, 3163, 3099, 3034, 3008, 2978, 2851, 2706],
+                markPoint: {
+                    data: [
+                        { type: 'max', name: '最大值' },
+                        { type: 'min', name: '最小值' }
+                    ]
+                },
+                markLine: {
+                    data: [
+                        { type: 'average', name: '平均值' }
+                    ]
+                }
+            }
+
+        ]
+    };
+    myChart.setOption(option);
+</script>

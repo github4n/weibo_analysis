@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/png">
+
+    <title>娱乐最前沿1014</title>
+
+    <!--I检查-->
+    <link href="js/iCheck/skins/minimal/minimal.css" rel="stylesheet">
+    <link href="js/iCheck/skins/square/square.css" rel="stylesheet">
+    <link href="js/iCheck/skins/square/red.css" rel="stylesheet">
+    <link href="js/iCheck/skins/square/blue.css" rel="stylesheet">
+
+    <!--仪表板的日历-->
+    <link href="css/clndr.css" rel="stylesheet">
+
+    <!--Morris Chart CSS -->
+    <link rel="stylesheet" href="js/morris-chart/morris.css">
+
+    <!--common-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet">
+
+</head>
+
+<body class="sticky-header">
+
+    <section>
+        <!-- 左边开始 -->
+        <div class="left-side sticky-left-side">
+
+            <!--logo and iconic logo start-->
+            <div class="logo">
+                <!--logo加载区域-->
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+
+            <div class="logo-icon text-center">
+
+                <a href="index.html"><img src="images/logo_icon.png" alt=""></a>
+            </div>
+            <!--logo and iconic logo end-->
+
+            <div class="left-side-inner">
+                <!--sidebar nav start-->
+                <ul class="nav nav-pills nav-stacked custom-nav">
+                    <li class="active"><a href="index.html"><i class="fa fa-home"></i> <span>统计分析</span></a></li>
+
+                    <li class="menu-list"><a href=""><i class="fa fa-bar-chart-o"></i> <span>微博分析</span></a>
+                        <ul class="sub-menu-list">
+                            <li><a href="user.html"> 博主分析</a></li>
+                            <li><a href="post.html"> 博文分析</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-list"><a href=""><i class="fa fa-cogs"></i> <span>网络分析</span></a>
+                        <ul class="sub-menu-list">
+                            <li><a href="user_network.html"> 用户网络分析</a></li>
+                            <li><a href="topic_network.html"> 话题网络分析</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--sidebar nav end-->
+
+            </div>
+        </div>
+        <!-- left side end-->
+
+        <!-- main content start-->
+        <div class="main-content">
+
+            <!-- header section start-->
+            <div class="header-section">
+
+                <!--toggle button start-->
+                <a class="toggle-btn"><i class="fa fa-bars"></i></a>
+                <!--toggle button end-->
+
+                <!--search start-->
+                <form class="searchform" action="index.html" method="post">
+                    <input type="text" class="form-control" name="keyword" placeholder="Search here..." />
+                </form>
+                <!--search end-->
+
+                <!--notification menu start -->
+                <div class="menu-right">
+                    <ul class="notification-menu">
+                        <li>
+                            <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <img src="https://wx4.sinaimg.cn/orj480/007GIP6sly8g1m2aiom8rj30u00u0tbx.jpg" alt="" />
+                                娱乐最前沿1014
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--notification menu end -->
+
+            </div>
+            <!-- header section end-->
+
+            <!--body wrapper start-->
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!--statistics start-->
+                        <div class="row state-overview">
+                            <div class="col-md-6 col-xs-12 col-sm-6">
+                                <div class="panel purple">
+                                    <div class="symbol">
+                                        <i class="fa fa-gavel"></i>
+                                    </div>
+                                    <div class="state-value">
+                                        <div class="value">40</div>
+                                        <div class="title"><span style="font-size:1.5em;">粉丝数目</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 col-sm-6">
+                                <div class="panel red">
+                                    <div class="symbol">
+                                        <i class="fa fa-tags"></i>
+                                    </div>
+                                    <div class="state-value">
+                                        <div class="value">186</div>
+                                        <div class="title"><span style="font-size:1.5em;">博主数目</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row state-overview">
+                            <div class="col-md-6 col-xs-12 col-sm-6">
+                                <div class="panel blue">
+                                    <div class="symbol">
+                                        <i class="fa fa-money"></i>
+                                    </div>
+                                    <div class="state-value">
+                                        <div class="value">15013</div>
+                                        <div class="title"><span style="font-size:1.5em;">微博数目</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 col-sm-6">
+                                <div class="panel green">
+                                    <div class="symbol">
+                                        <i class="fa fa-eye"></i>
+                                    </div>
+                                    <div class="state-value">
+                                        <div class="value">300345</div>
+                                        <div class="title"><span style="font-size:1.5em;">评论数目</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--statistics end-->
+                    </div>
+                    <div class="col-md-6">
+                        <!--more statistics box start-->
+                        <div class="panel ">
+                            <!--deep-purple-box-->
+                            <div class="panel-body">
+                                <div id='wordcloud_user' style="width: 100%; height: 250px;"></div>
+                                <!-- <div class="row">
+                                    <div class="col-md-7 col-sm-7 col-xs-7">
+                                        <div id="graph-donut" class="revenue-graph"></div>
+                                    </div>
+                                    <div class="col-md-5 col-sm-5 col-xs-5">
+                                        <ul class="bar-legend">
+                                            <li><span class="blue"></span> Negtive</li>
+                                            <li><span class="purple"></span> Normal</li>
+                                            <li><span class="red"></span> Postive</li>
+                                        </ul>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <!--more statistics box end-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="panel">
+                            <div class="panel-body extra-pad">
+                                <div class="row">
+                                    <div id='gender_pie' style="width:95%;height:200px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="panel">
+                            <div class="panel-body extra-pad">
+                                <div class="row">
+                                    <div id='emotion_pie' style="width:95%;height:200px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="panel">
+                            <div class="panel-body extra-pad">
+                                <div class="row">
+                                    <div id='origin_report_pie' style="width:95%;height:200px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="panel">
+                            <div class="panel-body extra-pad">
+                                <div class="row">
+                                    <div id='verify_pie' style="width:95%;height:200px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="panel">
+                            <div class="panel-body extra-pad">
+                                <div class="row">
+                                    <div id='age_pie' style="width:95%;height:200px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="panel">
+                            <div class="panel-body extra-pad">
+                                <div class="row">
+                                    <div id='position_pie' style="width:95%;height:200px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel">
+                            <header class="panel-heading">
+                                <h4><b>用户影响力TOP10</b></h4>
+                            </header>
+                            <div class="panel-body">
+                                <ul class="goal-progress" id='impact_users'>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel">
+                            <header class="panel-heading">
+                                <h4><b>热门话题TOP10</b></h4>
+                            </header>
+                            <div class="panel-body">
+                                <ul class="goal-progress" id='impact_topics'>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel">
+                            <header class="panel-heading">
+                                <h4><b>用户地区分布</b></h4>
+                            </header>
+                            <div class="panel-body">
+                                <div class="col-md-12">
+                                    <div id="neo4j" style="width: 100%;height:770px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--body wrapper end-->
+
+
+            <!--footer section start-->
+            <footer style="text-align:center">
+                <strong>2019 &copy; 北京理工大学计算机学院-社交网络分析</strong>
+            </footer>
+            <!--footer section end-->
+
+
+        </div>
+        <!-- main content end-->
+    </section>
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+
+    <!-- Placed js at the end of the document so the pages load faster -->
+    <!--<script src="js/jquery-1.10.2.min.js"></script>-->
+    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+
+    <!--easy pie chart-->
+    <script src="js/easypiechart/jquery.easypiechart.js"></script>
+    <script src="js/easypiechart/easypiechart-init.js"></script>
+
+    <!--Sparkline Chart-->
+    <script src="js/sparkline/jquery.sparkline.js"></script>
+    <script src="js/sparkline/sparkline-init.js"></script>
+
+    <!--icheck -->
+    <script src="js/iCheck/jquery.icheck.js"></script>
+    <script src="js/icheck-init.js"></script>
+
+    <!-- jQuery Flot Chart-->
+    <script src="js/flot-chart/jquery.flot.js"></script>
+    <script src="js/flot-chart/jquery.flot.tooltip.js"></script>
+    <script src="js/flot-chart/jquery.flot.resize.js"></script>
+
+
+    <!--Morris Chart-->
+    <script src="js/morris-chart/morris.js"></script>
+    <script src="js/morris-chart/raphael-min.js"></script>
+
+    <!--Calendar-->
+    <script src="js/calendar/clndr.js"></script>
+    <script src="js/calendar/evnt.calendar.init.js"></script>
+    <script src="js/calendar/moment-2.2.1.js"></script>
+    <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>-->
+
+    <!--common scripts for all pages-->
+    <script src="js/scripts.js"></script>
+
+    <!--Dashboard Charts-->
+    <script src="js/dashboard-chart-init.js"></script>
+
+</body>
+
+</html>
+
+<script src="js/echarts.min.js"></script>
+<script src="js/china.js"></script>
+<script type="text/javascript">
+    function convertData(data) {
+        var res = [];
+        for (var i = 0; i < data.length; i++) {
+            var geoCoord = geoCoordMap[data[i].name];
+            if (geoCoord) {
+                res.push({
+                    name: data[i].name,
+                    value: geoCoord.concat(data[i].value)
+                });
+            }
+        }
+        return res;
+    }
+
+    var data = [{ 'name': '江苏', 'value': 88.07970779778823 },
+    { 'name': '台湾', 'value': 99.75273768433654 },
+    { 'name': '湖南', 'value': 95.25741268224334 },
+    { 'name': '四川', 'value': 88.07970779778823 },
+    { 'name': '上海', 'value': 99.99999979388463 },
+    { 'name': '福建', 'value': 73.1058578630005 },
+    { 'name': '重庆', 'value': 99.33071490757153 },
+    { 'name': '北京', 'value': 100.0 },
+    { 'name': '浙江', 'value': 88.07970779778823 },
+    { 'name': '贵州', 'value': 73.1058578630005 },
+    { 'name': '新疆', 'value': 73.1058578630005 },
+    { 'name': '香港', 'value': 98.20137900379085 },
+    { 'name': '天津', 'value': 73.1058578630005 },
+    { 'name': '广东', 'value': 99.98766054240137 },
+    { 'name': '湖北', 'value': 73.1058578630005 },
+    { 'name': '河北', 'value': 73.1058578630005 }];
+    var geoCoordMap = {
+        '海门': [121.0, 31.0],
+        '鄂尔多斯': [109.0, 39.0],
+        '招远': [120.0, 37.0],
+        '舟山': [122.0, 29.0],
+        '齐齐哈尔': [123.0, 47.0],
+        '盐城': [120.0, 33.0],
+        '赤峰': [118.0, 42.0],
+        '青岛': [120.0, 36.0],
+        '乳山': [121.0, 36.0],
+        '金昌': [102.0, 38.0],
+        '泉州': [118.0, 24.0],
+        '莱西': [120.0, 36.0],
+        '日照': [119.0, 35.0],
+        '胶南': [119.0, 35.0],
+        '南通': [121.0, 32.0],
+        '拉萨': [91.0, 29.0],
+        '云浮': [112.0, 22.0],
+        '梅州': [116.0, 24.0],
+        '文登': [122.0, 37.0],
+        '上海': [121.4692688, 31.23817635],
+        '攀枝花': [101.718637, 26.582347],
+        '威海': [122.1, 37.5],
+        '承德': [117.93, 40.97],
+        '厦门': [118.1, 24.46],
+        '汕尾': [115.375279, 22.786211],
+        '潮州': [116.63, 23.68],
+        '丹东': [124.37, 40.13],
+        '太仓': [121.1, 31.45],
+        '曲靖': [103.79, 25.51],
+        '烟台': [121.39, 37.52],
+        '福州': [119.3, 26.08],
+        '瓦房店': [121.979603, 39.627114],
+        '即墨': [120.45, 36.38],
+        '抚顺': [123.97, 41.97],
+        '玉溪': [102.52, 24.35],
+        '张家口': [114.87, 40.82],
+        '阳泉': [113.57, 37.85],
+        '莱州': [119.942327, 37.177017],
+        '湖州': [120.1, 30.86],
+        '汕头': [116.69, 23.39],
+        '昆山': [120.95, 31.39],
+        '宁波': [121.56, 29.86],
+        '湛江': [110.359377, 21.270708],
+        '揭阳': [116.35, 23.55],
+        '荣成': [122.41, 37.16],
+        '连云港': [119.16, 34.59],
+        '葫芦岛': [120.836932, 40.711052],
+        '常熟': [120.74, 31.64],
+        '东莞': [113.75, 23.04],
+        '河源': [114.68, 23.73],
+        '淮安': [119.15, 33.5],
+        '泰州': [119.9, 32.49],
+        '南宁': [108.33, 22.84],
+        '营口': [122.18, 40.65],
+        '惠州': [114.4, 23.09],
+        '江阴': [120.26, 31.91],
+        '蓬莱': [120.75, 37.8],
+        '韶关': [113.62, 24.84],
+        '嘉峪关': [98.289152, 39.77313],
+        '广州': [113.23, 23.16],
+        '延安': [109.47, 36.6],
+        '太原': [112.53, 37.87],
+        '清远': [113.01, 23.7],
+        '中山': [113.38, 22.52],
+        '昆明': [102.73, 25.04],
+        '寿光': [118.73, 36.86],
+        '盘锦': [122.070714, 41.119997],
+        '长治': [113.08, 36.18],
+        '深圳': [114.07, 22.62],
+        '珠海': [113.52, 22.3],
+        '宿迁': [118.3, 33.96],
+        '咸阳': [108.72, 34.36],
+        '铜川': [109.11, 35.09],
+        '平度': [119.97, 36.77],
+        '佛山': [113.11, 23.05],
+        '海口': [110.35, 20.02],
+        '江门': [113.06, 22.61],
+        '章丘': [117.53, 36.72],
+        '肇庆': [112.44, 23.05],
+        '大连': [121.62, 38.92],
+        '临汾': [111.5, 36.08],
+        '吴江': [120.63, 31.16],
+        '石嘴山': [106.39, 39.04],
+        '沈阳': [123.38, 41.8],
+        '苏州': [120.62, 31.32],
+        '茂名': [110.88, 21.68],
+        '嘉兴': [120.76, 30.77],
+        '长春': [125.35, 43.88],
+        '胶州': [120.03336, 36.264622],
+        '银川': [106.27, 38.47],
+        '张家港': [120.555821, 31.875428],
+        '三门峡': [111.19, 34.76],
+        '锦州': [121.15, 41.13],
+        '南昌': [115.89, 28.68],
+        '柳州': [109.4, 24.33],
+        '三亚': [109.511909, 18.252847],
+        '自贡': [104.778442, 29.33903],
+        '吉林': [126.57, 43.87],
+        '阳江': [111.95, 21.85],
+        '泸州': [105.39, 28.91],
+        '西宁': [101.74, 36.56],
+        '宜宾': [104.56, 29.77],
+        '呼和浩特': [111.65, 40.82],
+        '成都': [104.06, 30.67],
+        '大同': [113.3, 40.12],
+        '镇江': [119.44, 32.2],
+        '桂林': [110.28, 25.29],
+        '张家界': [110.479191, 29.117096],
+        '宜兴': [119.82, 31.36],
+        '北海': [109.12, 21.49],
+        '西安': [108.95, 34.27],
+        '金坛': [119.56, 31.74],
+        '东营': [118.49, 37.46],
+        '牡丹江': [129.58, 44.6],
+        '遵义': [106.9, 27.7],
+        '绍兴': [120.58, 30.01],
+        '扬州': [119.42, 32.39],
+        '常州': [119.95, 31.79],
+        '潍坊': [119.1, 36.62],
+        '重庆': [106.5103378, 29.55817604],
+        '台州': [121.420757, 28.656386],
+        '南京': [118.78, 32.04],
+        '滨州': [118.03, 37.36],
+        '贵阳': [106.71, 26.57],
+        '无锡': [120.29, 31.59],
+        '本溪': [123.73, 41.3],
+        '克拉玛依': [84.77, 45.59],
+        '渭南': [109.5, 34.52],
+        '马鞍山': [118.48, 31.56],
+        '宝鸡': [107.15, 34.38],
+        '焦作': [113.21, 35.24],
+        '句容': [119.16, 31.95],
+        '北京': [116.3809433, 39.9236145],
+        '徐州': [117.2, 34.26],
+        '衡水': [115.72, 37.72],
+        '包头': [110.0, 40.58],
+        '绵阳': [104.73, 31.48],
+        '乌鲁木齐': [87.68, 43.77],
+        '枣庄': [117.57, 34.86],
+        '杭州': [120.19, 30.26],
+        '淄博': [118.05, 36.78],
+        '鞍山': [122.85, 41.12],
+        '溧阳': [119.48, 31.43],
+        '库尔勒': [86.06, 41.68],
+        '安阳': [114.35, 36.1],
+        '开封': [114.35, 34.79],
+        '济南': [117.0, 36.65],
+        '德阳': [104.37, 31.13],
+        '温州': [120.65, 28.01],
+        '九江': [115.97, 29.71],
+        '邯郸': [114.47, 36.6],
+        '临安': [119.72, 30.23],
+        '兰州': [103.73, 36.03],
+        '沧州': [116.83, 38.33],
+        '临沂': [118.35, 35.05],
+        '南充': [106.110698, 30.837793],
+        '天津': [117.2034988, 39.13111877],
+        '富阳': [119.95, 30.07],
+        '泰安': [117.13, 36.18],
+        '诸暨': [120.23, 29.71],
+        '郑州': [113.65, 34.76],
+        '哈尔滨': [126.63, 45.75],
+        '聊城': [115.97, 36.45],
+        '芜湖': [118.38, 31.33],
+        '唐山': [118.02, 39.63],
+        '平顶山': [113.29, 33.75],
+        '邢台': [114.48, 37.05],
+        '德州': [116.29, 37.45],
+        '济宁': [116.59, 35.38],
+        '荆州': [112.239741, 30.335165],
+        '宜昌': [111.3, 30.7],
+        '义乌': [120.06, 29.32],
+        '丽水': [119.92, 28.45],
+        '洛阳': [112.44, 34.7],
+        '秦皇岛': [119.57, 39.95],
+        '株洲': [113.16, 27.83],
+        '石家庄': [114.48, 38.03],
+        '莱芜': [117.67, 36.19],
+        '常德': [111.69, 29.05],
+        '保定': [115.48, 38.85],
+        '湘潭': [112.91, 27.87],
+        '金华': [119.64, 29.12],
+        '岳阳': [113.09, 29.37],
+        '长沙': [113.0, 28.21],
+        '衢州': [118.88, 28.97],
+        '廊坊': [116.7, 39.53],
+        '菏泽': [115.480656, 35.23375],
+        '合肥': [117.27, 31.86],
+        '武汉': [114.31, 30.52],
+        '大庆': [125.03, 46.58],
+        '湖南': [112.9812698, 28.20082474],
+        '浙江': [120.1592484, 30.26599503],
+        '福建': [119.2978134, 26.07859039],
+        '湖北': [114.2919388, 30.56751442],
+        '四川': [104.0817566, 30.66105652],
+        '江苏': [118.7727814, 32.04761505],
+        '广东': [113.2614288, 23.11891174],
+        '其他': [116.3809433, 39.9236145],
+        '美国': [116.3809433, 39.9236145],
+        '台湾': [120.960515, 23.69781],
+        '海外': [116.3809433, 39.9236145],
+        '河北': [114.4897766, 38.04512787],
+        '香港': [114.109497, 22.396428],
+        '新疆': [89.1895474, 42.95130195],
+        '贵州': [106.7113724, 26.57687378]
+    };
+
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('neo4j'));
+    // 指定图表的配置项和数据
+    var option = {}
+    option['backgroundColor'] = '#fff'
+    option['title'] = {
+        text: '省份: 19    用户: 185',
+        subText: 'adasds',
+        left: 'center',
+        textStyle: {
+            color: '#49586e',
+            fontSize: 14
+        }
+    }
+    option['toolbox'] = {
+        show: true,
+        feature: {
+            dataView: { show: true, readOnly: false },
+            restore: { show: true },
+            saveAsImage: { show: true }
+        }
+    },
+        option['tooltip'] = {
+            trigger: 'item'
+        }
+    option['legend'] = {
+        orient: 'vertical',
+        y: 'bottom',
+        x: 'right',
+        data: ['地区'],
+        textStyle: {
+            color: '#000'
+        }
+    }
+    option['geo'] = {
+        map: 'china',
+        label: {
+            emphasis: {
+                show: true
+            }
+        },
+        roam: true,
+        itemStyle: {
+            normal: {
+                areaColor: '#49586e',
+                borderColor: '#111'
+            },
+            emphasis: {
+                borderColor: '#FF4040',
+                areaColor: '#B3EE3A'
+            }
+        }
+    }
+    var series = [
+        {
+            name: '地区',
+            type: 'scatter',
+            coordinateSystem: 'geo',
+            data: convertData(data),
+            symbolSize: function (val) {
+                return val[2] / 5;
+            },
+            label: {
+                normal: {
+                    formatter: '{b}',
+                    position: 'right',
+                    show: true
+                },
+                emphasis: {
+                    show: true
+                }
+            },
+            itemStyle: {
+                normal: {
+                    color: '#ff66ff',
+                }
+            }
+        },
+        {
+            name: 'Top 10',
+            type: 'effectScatter',
+            coordinateSystem: 'geo',
+            data: convertData(data.sort(function (a, b) {
+                return b.value - a.value;
+            }).slice(0, 10)),
+            symbolSize: function (val) {
+                return val[2] / 10;
+            },
+            showEffectOn: 'render',
+            rippleEffect: {
+                brushType: 'stroke'
+            },
+            hoverAnimation: true,
+            label: {
+                normal: {
+                    formatter: '{b}',
+                    position: 'right',
+                    show: true,
+                    fontSize: 14
+                }
+            },
+            itemStyle: {
+                normal: {
+                    color: '#f50',
+                    shadowBlur: 10,
+                    shadowColor: '#333',
+                }
+            },
+            zlevel: 1
+        }
+    ]
+    option['series'] = series
+    myChart.setOption(option);
+</script>
+
+<script>
+    // gender_pie
+    var myChart = echarts.init(document.getElementById('gender_pie'));
+    option = {
+        title: {
+            text: '性别比例',
+            x: 'center',
+            textStyle: {
+                fontSize: 20
+            }
+        },
+        tooltip: {
+            trigger: 'item',
+        },
+        series: [
+            {
+                type: 'pie',
+                radius: '55%',
+                center: ['50%', '60%'],
+                data: [
+                    { value: 116, name: '男' },
+                    { value: 70, name: '女' },
+                ],
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.9)'
+                    }
+                }
+            }
+        ]
+    };
+    myChart.setOption(option);
+
+    // emotion_pie
+    var myChart = echarts.init(document.getElementById('emotion_pie'));
+    option = {
+        title: {
+            text: '感情状况比例',
+            x: 'center',
+            textStyle: {
+                fontSize: 20
+            }
+        },
+        tooltip: {
+            trigger: 'item',
+        },
+        series: [
+            {
+                type: 'pie',
+                radius: '55%',
+                center: ['50%', '60%'],
+                data: [
+                    { value: 10, name: '已结婚' },
+                    { value: 20, name: '求交往' },
+                    { value: 40, name: '单身' },
+                ],
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.9)'
+                    }
+                }
+            }
+        ]
+    };
+    myChart.setOption(option);
+
+    //origin_report_pie
+    var myChart = echarts.init(document.getElementById('origin_report_pie'));
+    option = {
+        title: {
+            text: '原创转发比例',
+            x: 'center',
+            textStyle: {
+                fontSize: 20
+            }
+        },
+        tooltip: {
+            trigger: 'item',
+        },
+        series: [
+            {
+                type: 'pie',
+                radius: '55%',
+                center: ['50%', '60%'],
+                data: [
+                    { value: 14722, name: '原创' },
+                    { value: 291, name: '转发' },
+                ],
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.9)'
+                    }
+                }
+            }
+        ]
+    };
+    myChart.setOption(option);
+
+    //verify_pie
+    var myChart = echarts.init(document.getElementById('verify_pie'));
+    option = {
+        title: {
+            text: '认证比例',
+            x: 'center',
+            textStyle: {
+                fontSize: 20
+            }
+        },
+        tooltip: {
+            trigger: 'item',
+        },
+        series: [
+            {
+                type: 'pie',
+                radius: '55%',
+                center: ['50%', '60%'],
+                data: [
+                    { value: 172, name: '已认证' },
+                    { value: 14, name: '未认证' },
+                ],
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.9)'
+                    }
+                }
+            }
+        ]
+    };
+    myChart.setOption(option);
+    //age_pie
+    var myChart = echarts.init(document.getElementById('age_pie'));
+    option = {
+        title: {
+            text: '年龄比例',
+            x: 'center',
+            textStyle: {
+                fontSize: 20
+            }
+        },
+        tooltip: {
+            trigger: 'item',
+        },
+        series: [
+            {
+                type: 'pie',
+                radius: '55%',
+                center: ['50%', '60%'],
+                data: [
+                    { value: 67, name: '90' },
+                    { value: 27, name: '80' },
+                    { value: 17, name: '70' },
+                    { value: 30, name: '10' },
+                    { value: 38, name: '00' },
+                ],
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.9)'
+                    }
+                }
+            }
+        ]
+    };
+    myChart.setOption(option);
+    //position_pie
+    var myChart = echarts.init(document.getElementById('position_pie'));
+    option = {
+        title: {
+            text: '职业比例',
+            x: 'center',
+            textStyle: {
+                fontSize: 20
+            }
+        },
+        tooltip: {
+            trigger: 'item',
+        },
+        series: [
+            {
+                type: 'pie',
+                radius: '55%',
+                center: ['50%', '60%'],
+                data: [
+                    { value: 48, name: '演员' },
+                    { value: 33, name: '娱乐' },
+                    { value: 38, name: '歌手' },
+                    { value: 42, name: '知名博主' },
+                    { value: 17, name: '其他' },
+                    { value: 7, name: '自媒体' },
+                    { value: 1, name: '主持人' },
+                ],
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.9)'
+                    }
+                }
+            }
+        ]
+    };
+    myChart.setOption(option);
+
+    // 生成影响力排名
+    data = [
+        ['蔡徐坤', '100'],
+        ['TFBOYS-易烊千玺', '96'],
+        ['TFBOYS-王源', '82'],
+        ['华晨宇yu', '80'],
+        ['TFBOYS-王俊凯', '71'],
+        ['杨洋', '66'],
+        ['吴磊LEO', '60'],
+        ['胡歌', '38'],
+        ['刘昊然turbo', '33'],
+        ['杨幂', '18']]
+    images = ['https://tvax2.sinaimg.cn/crop.0.0.1125.1125.180/69e273f8ly8fuqt81zh3dj20v90v9abc.jpg', 'https://tvax2.sinaimg.cn/crop.0.0.996.996.180/d7f7faddly8fhx8l3fuiuj20ro0rojtn.jpg', 'https://tvax1.sinaimg.cn/crop.0.0.996.996.180/a7a0d747ly8fhx8k128s8j20ro0rogof.jpg', 'https://tva4.sinaimg.cn/crop.0.0.1080.1080.180/60da5d47jw8esd1q1zlzmj20u00u076v.jpg', 'https://tvax2.sinaimg.cn/crop.0.0.996.996.180/9b884b3bly8fhx93bz3rej20ro0rojtg.jpg', 'https://tvax2.sinaimg.cn/crop.0.0.1080.1080.180/6c351711ly8g2ioufp70gj20u00u0gpa.jpg', 'https://tva3.sinaimg.cn/crop.1.0.1240.1240.180/7fad39afjw8f7hemst7m4j20yi0ygq5x.jpg', 'https://tvax3.sinaimg.cn/crop.0.0.1125.1125.180/48e837eely8fukyqrf4ijj20v90v9mzy.jpg', 'https://tva2.sinaimg.cn/crop.0.0.1242.1242.180/ab179aaejw8f3xb0otda9j20yi0yj0yl.jpg', 'https://tva4.sinaimg.cn/crop.0.0.512.512.180/473df571jw8eku7gao4irj20e80e8dg7.jpg']
+    for (var i = 0; i < images.length; i++) {
+        li = '<li> <div class="prog-avatar"> <img src="' + images[i] + '" '//头像
+        li += 'alt="" /> </div> <div class="details"> <div class="title"> '
+        li += '<a href="#">' + data[i][0] + '</a> '//name
+        li += '</div> <div class="progress progress-xs progress-striped active"> <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" '
+        li += 'style="width: ' + data[i][1] + '%"> <span class="">' + data[i][1] + '</span> </div> </div> </div> </li>'//影响力
+        $('#impact_users').append(li);
+    }
+    //生成热门话题 impact_topics
+    data = [['#NBA季后赛#', '100'],
+    ['#会火娱乐快报#', '88'],
+    ['#娱乐橘闻#', '75'],
+    ['#华为P30#', '65'],
+    ['#一封家书#', '57'],
+    ['#妻子的浪漫旅行#', '44'],
+    ['#2019MSI#', '41'],
+    ['#idoltube#', '34'],
+    ['#戛纳电影节#', '30'],
+    ['#创造营2019#', '29']]
+    images = ['https://tvax2.sinaimg.cn/crop.0.0.1125.1125.180/69e273f8ly8fuqt81zh3dj20v90v9abc.jpg', 'https://tvax2.sinaimg.cn/crop.0.0.996.996.180/d7f7faddly8fhx8l3fuiuj20ro0rojtn.jpg', 'https://tvax1.sinaimg.cn/crop.0.0.996.996.180/a7a0d747ly8fhx8k128s8j20ro0rogof.jpg', 'https://tva4.sinaimg.cn/crop.0.0.1080.1080.180/60da5d47jw8esd1q1zlzmj20u00u076v.jpg', 'https://tvax2.sinaimg.cn/crop.0.0.996.996.180/9b884b3bly8fhx93bz3rej20ro0rojtg.jpg', 'https://tvax2.sinaimg.cn/crop.0.0.1080.1080.180/6c351711ly8g2ioufp70gj20u00u0gpa.jpg', 'https://tva3.sinaimg.cn/crop.1.0.1240.1240.180/7fad39afjw8f7hemst7m4j20yi0ygq5x.jpg', 'https://tvax3.sinaimg.cn/crop.0.0.1125.1125.180/48e837eely8fukyqrf4ijj20v90v9mzy.jpg', 'https://tva2.sinaimg.cn/crop.0.0.1242.1242.180/ab179aaejw8f3xb0otda9j20yi0yj0yl.jpg', 'https://tva4.sinaimg.cn/crop.0.0.512.512.180/473df571jw8eku7gao4irj20e80e8dg7.jpg']
+    for (var i = 0; i < images.length; i++) {
+        li = '<li>'
+        li += '<div class="details"> <div class="title"> '
+        li += '<a href="#">' + data[i][0] + '</a> '
+        li += '</div> <div class="progress progress-xs progress-striped active"> <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" '
+        li += 'style="width: ' + data[i][1] + '%"> <span class="">' + data[i][1] + '</span> </div> </div> </div> </li>'
+        $('#impact_topics').append(li);
+    }
+
+</script>
+
+
+<script src='js/echarts-wordcloud.min.js'></script>
+<script>
+    var chart = echarts.init(document.getElementById('wordcloud_user'));
+    var option = {
+        tooltip: {},
+        series: [{
+            type: 'wordCloud',
+            gridSize: 2,
+            sizeRange: [12, 50],
+            rotationRange: [-90, 90],
+            shape: 'pentagon',//circle
+            width: 760,
+            height: 200,
+            drawOutOfBound: true,
+            textStyle: {
+                normal: {
+                    color: function () {
+                        return 'rgb(' + [
+                            Math.round(Math.random() * 160),
+                            Math.round(Math.random() * 160),
+                            Math.round(Math.random() * 160)
+                        ].join(',') + ')';
+                    }
+                },
+                emphasis: {
+                    shadowBlur: 10,
+                    shadowColor: '#333'
+                }
+            },
+            data: [{ 'name': '蔡徐坤', 'value': 104459082 },
+            { 'name': 'TFBOYS-易烊千玺', 'value': 101211691 },
+            { 'name': 'TFBOYS-王源', 'value': 86389552 },
+            { 'name': '华晨宇yu', 'value': 83624676 },
+            { 'name': 'TFBOYS-王俊凯', 'value': 74901556 },
+            { 'name': '杨洋', 'value': 69947484 },
+            { 'name': '吴磊LEO', 'value': 62774756 },
+            { 'name': '胡歌', 'value': 40352231 },
+            { 'name': '刘昊然turbo', 'value': 34736117 },
+            { 'name': '杨幂', 'value': 19704064 },
+            { 'name': '林更新', 'value': 17159131 },
+            { 'name': '张杰', 'value': 11435617 },
+            { 'name': '潘瑋柏', 'value': 9520217 },
+            { 'name': '吴昕', 'value': 6922766 },
+            { 'name': '井柏然', 'value': 3576650 },
+            { 'name': 'TFBOYS组合', 'value': 3205053 },
+            { 'name': '谢娜', 'value': 2160743 },
+            { 'name': '陈坤', 'value': 2027406 },
+            { 'name': '陈赫', 'value': 2017705 },
+            { 'name': '新手指南', 'value': 1869594 },
+            { 'name': 'papi酱', 'value': 1803565 },
+            { 'name': '黄晓明', 'value': 1213479 },
+            { 'name': '人民日报', 'value': 1178444 },
+            { 'name': '歐陽娜娜Nana', 'value': 954251 },
+            { 'name': '微博会员', 'value': 941864 },
+            { 'name': '微博故事', 'value': 888564 },
+            { 'name': '超话社区', 'value': 868335 },
+            { 'name': '头条新闻', 'value': 643877 },
+            { 'name': '微博任务', 'value': 622436 },
+            { 'name': '新浪娱乐', 'value': 539434 },
+            { 'name': '中国新闻周刊', 'value': 527236 },
+            { 'name': '中国新闻网', 'value': 486870 },
+            { 'name': '努力努力再努力x', 'value': 465236 },
+            { 'name': 'Mr_凡先生', 'value': 460602 },
+            { 'name': 'YouTube精彩视频', 'value': 448107 },
+            { 'name': '刘涛tamia', 'value': 432087 },
+            { 'name': '微博会员小秘书', 'value': 414011 },
+            { 'name': '电影工厂', 'value': 411267 },
+            { 'name': 'NBA', 'value': 410673 },
+            { 'name': '微博钱包', 'value': 331518 },
+            { 'name': '天猫', 'value': 306826 },
+            { 'name': 'GEM鄧紫棋', 'value': 304539 },
+            { 'name': '神店通缉令', 'value': 258762 },
+            { 'name': 'YouTube精选', 'value': 243805 },
+            { 'name': '花泽香菜', 'value': 235762 },
+            { 'name': '孙坚', 'value': 223764 },
+            { 'name': 'Boom球爷', 'value': 221060 },
+            { 'name': '优酷', 'value': 214818 },
+            { 'name': '八鹅吃瓜酱', 'value': 214376 },
+            { 'name': '八组兔区速报', 'value': 214019 },
+            { 'name': '新浪体育', 'value': 212503 },
+            { 'name': '火箭少女101_孟美岐', 'value': 203196 },
+            { 'name': '澎湃新闻', 'value': 201134 },
+            { 'name': '新浪新闻', 'value': 200145 },
+            { 'name': '一封家书', 'value': 196691 },
+            { 'name': '新浪科技', 'value': 196599 },
+            { 'name': '圈内大神', 'value': 196560 },
+            { 'name': '梨视频', 'value': 185946 },
+            { 'name': '穿帮君', 'value': 180537 },
+            { 'name': '天鹅娱乐', 'value': 178632 },
+            { 'name': '李荣浩', 'value': 170857 },
+            { 'name': '第一财经日报', 'value': 167556 },
+            { 'name': '全球热门搜罗', 'value': 163587 },
+            { 'name': '英雄联盟', 'value': 158553 },
+            { 'name': '星娱酱', 'value': 157715 },
+            { 'name': '广州日报', 'value': 156971 },
+            { 'name': '徐冬冬', 'value': 148553 },
+            { 'name': '天秀bot', 'value': 144599 },
+            { 'name': '苏醒AllenSu', 'value': 137798 },
+            { 'name': '深扒君', 'value': 137477 },
+            { 'name': '微博视频', 'value': 134867 },
+            { 'name': '娱扒光', 'value': 129286 },
+            { 'name': '陳小春', 'value': 126166 },
+            { 'name': '包贝尔', 'value': 124854 },
+            { 'name': '新剧一直播', 'value': 123758 },
+            { 'name': '圈内教父', 'value': 121089 },
+            { 'name': '娱乐明星团', 'value': 118169 },
+            { 'name': '会火', 'value': 116515 },
+            { 'name': '张丹峰', 'value': 112578 },
+            { 'name': '王牌星探', 'value': 110522 },
+            { 'name': '娱乐女记', 'value': 109595 },
+            { 'name': '鲜娱君', 'value': 109506 },
+            { 'name': '陳柏霖', 'value': 109319 },
+            { 'name': '新浪综艺', 'value': 105683 },
+            { 'name': '橘子娱乐', 'value': 105456 },
+            { 'name': '娱乐圈扒姑', 'value': 104358 },
+            { 'name': 'TIA袁娅维', 'value': 103982 },
+            { 'name': '圈内密探', 'value': 102741 },
+            { 'name': '于嘉', 'value': 102636 },
+            { 'name': '饭圈联播', 'value': 101553 },
+            { 'name': '每日笑话微博', 'value': 100915 },
+            { 'name': '观察者网', 'value': 100898 },
+            { 'name': '八组兔区爆料', 'value': 99671 },
+            { 'name': '人人视频', 'value': 98257 }
+            ]
+        }]
+    };
+    chart.setOption(option);
+    window.onresize = chart.resize;
+</script>

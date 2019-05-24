@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="#" type="image/png">
+
+    <title>娱乐最前沿1014</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="sticky-header">
+
+    <section>
+        <!-- left side start-->
+        <div class="left-side sticky-left-side">
+
+            <!--logo and iconic logo start-->
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+
+            <div class="logo-icon text-center">
+                <a href="index.html"><img src="images/logo_icon.png" alt=""></a>
+            </div>
+            <!--logo and iconic logo end-->
+
+
+            <div class="left-side-inner">
+
+                <!--sidebar nav start-->
+                <ul class="nav nav-pills nav-stacked custom-nav">
+                    <li><a href="index.html"><i class="fa fa-home"></i> <span>统计分析</span></a></li>
+
+                    <li class="menu-list"><a href=""><i class="fa fa-bar-chart-o"></i> <span>微博分析</span></a>
+                        <ul class="sub-menu-list">
+                            <li><a href="user.html"> 博主分析</a></li>
+                            <li><a href="post.html"> 博文分析</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-list"><a href=""><i class="fa fa-cogs"></i> <span>网络分析</span></a>
+                        <ul class="sub-menu-list" style="display: block;">
+                            <li class="active"><a href="user_network.html"> 用户网络分析</a></li>
+                            <li><a href="topic_network.html"> 话题网络分析</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--sidebar nav end-->
+
+            </div>
+        </div>
+        <!-- left side end-->
+
+        <!-- main content start-->
+        <div class="main-content">
+
+            <!-- header section start-->
+            <div class="header-section">
+
+                <!--toggle button start-->
+                <a class="toggle-btn"><i class="fa fa-bars"></i></a>
+                <!--toggle button end-->
+
+                <!--search start-->
+                <form class="searchform" action="index.html" method="post">
+                    <input type="text" class="form-control" name="keyword" placeholder="Search here..." />
+                </form>
+                <!--search end-->
+
+                <!--notification menu start -->
+                <div class="menu-right">
+                    <ul class="notification-menu">
+                        <li>
+                            <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <img src="https://wx4.sinaimg.cn/orj480/007GIP6sly8g1m2aiom8rj30u00u0tbx.jpg" alt="" />
+                                娱乐最前沿1014
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--notification menu end -->
+
+            </div>
+            <!-- header section end-->
+
+            <!-- page heading start-->
+            <div class="page-heading">
+            </div>
+            <!-- page heading end-->
+
+            <!--body wrapper start-->
+            <div class="wrapper">
+                <div class="row blog">
+
+                    <div class="col-md-12">
+                        <h1 class="text-center mtop35">用户网络拓扑</h1>
+                        <div class="panel">
+                            <div class="panel-body">
+                                <p class="text-center auth-row">
+                                    <span style="color:black">186个博主的关系网络拓扑, Tool： UCIENT、NetDraw</span>
+                                </p>
+                                <div class="blog-img-wide">
+                                    <img src="images/blog/social_network.jpg" style="height:700px;" alt="">
+                                </div>
+                                <strong>
+                                    <p>
+                                        抽样：对微博的巨大网络进行抽样，选择4月份微博每天微博热搜top5的影响力（依照博文的转发量和评论量）最大的博主进行关注。
+                                    </p>
+                                </strong>
+                            </div>
+                        </div>
+                        <center>
+                            <h1>度中心性分析</h1>
+                        </center>
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="blog-img-wide">
+                                    <img src="images/blog/degree.jpg" style="height:700px;" alt="">
+                                </div>
+                                <h1 class=""><a href="#">Degree Centrality</a></h1>
+                                <!--<p class=" auth-row">-->
+                                <!--By <a href="#">Anthony Jones</a>   |   27 December 2014   | <a href="#">5 Comments</a>-->
+                                <!--</p>-->
+
+                                <strong>
+                                    <p>度中心性是衡量整个网络中心化程度的重要指标，在网络群体中处于中心位置更易获得资源和信息，拥有更大的权利和影响力。<br/>
+                                        从图中我们可以看到：粉丝头条官方微博、新浪娱乐、微博视频、超话社区在整个互动网路中更有影响力。
+                                    </p>
+                                </strong>
+                            </div>
+                        </div>
+                        <center>
+                            <h1>紧密度中心性分析</h1>
+                        </center>
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="blog-img-wide">
+                                    <img src="images/blog/closeness_centrality.jpg" style="height:700px;" alt="">
+                                </div>
+                                <h1 class=""><a href="#">Closeness Centrality</a></h1>
+                                <!--<p class=" auth-row">-->
+                                <!--By <a href="#">Anthony Jones</a>   |   27 December 2014   | <a href="#">5 Comments</a>-->
+                                <!--</p>-->
+
+                                <strong>
+                                    <p>紧密度中心性：反应网络中某一节点与其他节点之间的接近程度。<br/>
+                                        在整个互动网络中话题的传播更依赖于圈内少年、娱乐圈扒姐、扒圈小猪这些娱乐话题大V。
+                                    </p>
+                                </strong>
+                            </div>
+                        </div>
+                        <center>
+                            <h1>介数中心性分析</h1>
+                        </center>
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="blog-img-wide">
+                                    <img src="images/blog/between_centrality.jpg" style="height:700px;" alt="">
+                                </div>
+                                <h1 class=""><a href="#">Betweenness Centrality</a></h1>
+                                <!--<p class=" auth-row">-->
+                                <!--By <a href="#">Anthony Jones</a>   |   27 December 2014   | <a href="#">5 Comments</a>-->
+                                <!--</p>-->
+
+                                <strong>
+                                    <p>介数中心性：以网络中的某个节点的的最短路径。
+                                        新浪新闻在整个用户网络中通信和信息传播中起着重要作用。
+                                    </p>
+                                </strong>
+                            </div>
+                        </div>
+                        <center>
+                            <h1>团分析</h1>
+                        </center>
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="blog-img-wide">
+                                    <img src="images/blog/cliques.bmp" style="height:700px;" style="height:700px;"
+                                        alt="">
+                                </div>
+                                <h1 class=""><a href="#">Cliques</a></h1>
+
+                                <strong>
+                                    <p>Cliques是指在该子图中任何两点之间都存在一条直线相连的先，并且该派系不能被网络中的其他派系所包含，
+                                        是网络中的最大完备子图。<br/>
+                                        k-clique：任两个节点间的最短路径的最大值<=k 共生成18个团，整体网络的关联度还是比较强的。 </p> </strong> </div> </div>
+                                            <div class="panel">
+                                            <div class="panel-body">
+                                                <div class="blog-img-wide">
+                                                    <img src="images/blog/sub_clique.bmp" style="height:700px;" alt="">
+                                                </div>
+                                                <h1 class=""><a href="#">Cliques</a></h1>
+                                                <p>其中一个派系成员
+                                                </p>
+                                            </div>
+                            </div>
+                            <center>
+                                <h1>派系分析</h1>
+                            </center>
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <div class="blog-img-wide">
+                                        <img src="images/blog/factions.jpg" style="height:700px;" alt="">
+                                    </div>
+                                    <h1 class=""><a href="#">Faction</a></h1>
+
+                                    <strong><p>派系，共分为10个派系
+                                    </p></strong>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--body wrapper end-->
+
+            </div>
+            <!-- main content end-->
+    </section>
+
+    <!-- Placed js at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+
+
+    <!--common scripts for all pages-->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
